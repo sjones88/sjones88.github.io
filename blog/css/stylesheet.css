@@ -8,6 +8,7 @@
 	width: 490px;
 	margin-top: -200px;
 	margin-bottom: 10px;
+	font-family: courier;
 }
 
 .right {
@@ -29,11 +30,15 @@
 	position: fixed;
 	float: left;
 	width: 70px;
-	height: 93%;
+	height: 98%;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
 .section {
 	width: 500px;
+}
+
+p {
+	font-family: Verdana;
 }
