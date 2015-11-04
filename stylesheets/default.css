@@ -1,0 +1,114 @@
+header {
+	/*background-color: #efefef;*/
+	padding: 5px 5px -3px 5px;
+	border-radius: 3px;
+}
+
+h1 {
+	position: relative;
+	margin-left: 265px;
+	padding-top: 7px;
+	font-family: Verdana;
+	color: white;
+}
+
+section {
+	height: 500px;
+	border-radius: 1px;
+}
+
+.background-img {
+	background-image: url("https://farm2.staticflickr.com/1023/712054632_abdac07887_b.jpg");
+	height: 513px;
+}
+
+h3 {
+	font-family: Verdana;
+	color: white;
+	font-size: 1.125em;
+	padding-left: 5px;
+}
+
+a:hover {
+	font-style: italic;
+	color: black;
+
+}
+
+.about-me1 {
+	width: 400px;
+	margin-left: 5px;
+	margin-top:-10px;
+	font-size: 1.125em;
+	font-family: Verdana;
+	/*background-color: #ECF2F9;*/
+	padding-top: 0px;
+	padding-left: 10px;
+	font-weight: 500;
+	color: white;
+}
+
+.about-me2 {
+	width: 400px;
+	margin-left: 200px;
+	font-size: 1.125em;
+	font-family: Verdana;
+	/*background-color: #ECF2F9;*/
+	padding-top: 10px;
+	font-weight: 500;
+	color: white;
+}
+
+.about-me3 {
+	width: 400px;
+	margin-left: 400px;
+	font-size: 1.125em;
+	font-family: Verdana;
+	/*background-color: #ECF2F9;*/
+	padding-top: 2px;
+	font-weight: 500;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 100%;
+	font-family: Verdana;
+}
+
+.head-links {
+	position: relative;
+	margin-left: 250px;
+
+}
+
+#L1 {
+	position: relative;
+	margin-right: 10px;
+}
+
+#L2 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#L3 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#L4 {
+	margin-left: 10px;
+}
+
+.divider {
+	height: 2px;
+	width: 98%;
+	background-color: black;
+	border-radius: 5px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	margin-left: 8px;
+
+}
