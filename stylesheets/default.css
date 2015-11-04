@@ -2,6 +2,8 @@ header {
 	/*background-color: #efefef;*/
 	padding: 5px 5px -3px 5px;
 	border-radius: 3px;
+	margin: auto;
+	width: 95%
 }
 
 h1 {
@@ -15,16 +17,23 @@ h1 {
 
 body {
 	background-color: #E4E4E4;
+	width: 95%;
+	margin: auto;
 }
 
 section {
-	height: 500px;
-	border-radius: 1px;
+	/*height: 500px;
+	border-radius: 1px;*/
+	overflow: auto;
 }
 
 .background-img {
 	background-image: url("https://farm2.staticflickr.com/1023/712054632_abdac07887_b.jpg");
+	/*height: 513px;
+	width: 1024px;*/
 	height: 513px;
+	width: 95%;
+	background-repeat: no-repeat;
 }
 
 h3 {
