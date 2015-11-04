@@ -6,7 +6,8 @@ header {
 
 h1 {
 	position: relative;
-	margin-left: 265px;
+	text-align: center;
+	/*margin-left: 265px;*/
 	padding-top: 7px;
 	font-family: Verdana;
 	color: white;
@@ -79,7 +80,8 @@ a {
 
 .head-links {
 	position: relative;
-	margin-left: 250px;
+	/*margin-left: 250px;*/
+	text-align: center;
 
 }
 
