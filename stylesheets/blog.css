@@ -3,12 +3,27 @@ body {
 	background-repeat: no-repeat;
 	position: relative;
 	width: 500px;
+	background-position: center top;
 }
 
 h3 {
 	text-align: center;
+	margin-left: 75%;
 }
 
 li {
 	color: white;
+}
+
+ul {
+	margin-left: 65%;
+}
+
+header {
+	position: relative;
+	margin-left: 45%;
+}
+
+.divider {
+	margin-left: -6.5%;
 }
