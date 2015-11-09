@@ -1,0 +1,29 @@
+.ex1 {
+	width: 50%;
+	height: 5%;
+}
+
+p {
+	width: 50%;
+}
+
+article	{
+	position: relative;
+	left: 20%;
+}
+
+.top {
+	background-color: #efefef;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+* {
+	font-family: Helvetica, sans-serif;
+}
+
+.src {
+	position: relative;
+	bottom: 18px;
+	font-size: 12px;
+}
