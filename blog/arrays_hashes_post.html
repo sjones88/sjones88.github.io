@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <charset="UTF-8">
+  <title>Steve Jones</title>
+  <link rel="stylesheet" type="text/css" href="css-concepts.css">
+</head>
+<body style="font-family:Helvetica;">
+<main>
+  <div class="left"></div>
+  <div class="right">
+  <header class="top">
+  	<h1>Arrays and Hashes</h1>
+    <h2>Comparing Ruby's Collection Objects</h2>
+    <h4>November 15, 2015</h4>
+  </header>
+  </div><hr />
+<article>
+ 	<header><h3>What's an array?</h3></header>
+ 	<p>An array is an ordered collection of objects. Any object at all can be stored in an array: floating point numbers, integers, symbols, other arrays, hashes, file names, classes, and boolean values. Really, an array is an ordered collection of object pairs in which one of the objects is always an integer; that integer corresponds to its object's position in the array. Arrays are indexed from left to right, starting from 0, and elements are accessed by their index number. So if you want to access the first element of an array, you type <span style="font-family:Courier; color:blue">array[0]</span>, for the second element, <span style="font-family:Courier; color:blue">array[1]</span>, for the hundreth element, <span style="font-family:Courier; color:blue">array[99]</span>, and so on. It's worth noting here that the contents of an array always remain in the same order until you explicitly move them by calling one of the array methods.</p>
+  <p>Here's an example of an array of strings assigned to the variable "city_names":</p>
+  <p style="font-family:Courier; color:blue">city_names = ['Beijing', 'Chicago', 'Nashville', 'Detroit']</p>
+  <p>To access 'Chicago' in the <span style="font-family:Courier;color:blue;">city_names</span> array, type: <span style="font-family:Courier;color:blue;">city_names[1]</span></p>
+
+	<header><h3>What's a hash?</h3></header>
+	<p>Hashes are a lot like arrays, except objects are indexed differently in hashes. Instead of indexing objects with integers in order from left to right, hashes organize objects in <i>key: value pairs</i>. You access a value by referring to its key; a key can be a string, integer, or any other kind of object. Here's an example of a hash:</p>
+  <span style="color:blue;"><p style="font-family:Courier;">state_abbreviations = {</p>
+    <p style="font-family:Courier;">'IL'  =>  'Illinois',</p>
+    <p style="font-family:Courier;">'NY'  =>  'New York', </p>
+    <p style="font-family:Courier;">'WI'  =>  'Wisconsin',</p>
+    <p style="font-family:Courier;">'TX'  =>  'Texas'</p>
+    <p style="font-family:Courier;">}</p></span>
+  <p>If you want to return the value 'Wisconsin', you refer to its key, like this:</p>
+  <p><span style="font-family:Courier;color:blue;">state_abbreviations['WI']</span></p>
+
+  <header><h3>When to use arrays. When to use hashes.</h3></header>
+  <p>As you can tell, arrays and hashes are quite similar, so a natural question is which one is better? The obnoxious answer is 'both' and 'neither'. You could argue that hashes are more work to construct by hand because you have to type in a key for each value, whereas arrays automatically index their elements. However, it might be nice to be able to access your values by typing a short string, as in the state abbreviations example. Your choice of collection object will ultimately depend on your coding needs and style.</p>
+</article>
+</div>
+</div>
+</main>
+</body>
+</html>
