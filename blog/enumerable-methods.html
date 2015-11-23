@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <charset="UTF-8">
+  <title>Steve Jones</title>
+  <link rel="stylesheet" type="text/css" href="css-concepts.css">
+</head>
+<body style="font-family:Helvetica;">
+<main>
+  <div class="left"></div>
+  <div class="right">
+  <header class="top">
+  	<h1>Enumerable Methods</h1>
+    <h2>The Enumberable#map Method</h2>
+    <h4>November 23, 2015</h4>
+  </header>
+  </div><hr />
+<article>
+ 	<header><h3>Enumberable#map: What is it?</h3></header>
+ 	<p>If you've ever iterated over an array in Ruby, then you've probably encountered the <span style="font-family:Courier;">each</span> method. If you have an array of strings that you want to print to the screen, the <span style="font-family:Courier;">each</span> method is your friend. You would probably do something like this:</p>
+  <p style="font-family:Courier;">south_park_kids = ['Cartman', 'Kyle', 'Stan', 'Kenny']</p>
+  <p style="font-family:Courier;">south_park_kids.each {|kid| puts kid}</p>
+  <p>Printing lists to the screen is great, but what if we want to do something really exciting with our collection objects? Let's say we have an array of integers and we want to return an array of slightly bigger integers (bigger is always better, right?). Your first instinct might be to use <span style="font-family:Courier;">each</span> and point a variable at the result. You might try something like this:</p>
+  <p style="font-family:Courier; color:blue;">small_integers = [1,2,3,4,5]</p>
+  <p style="font-family:Courier; color:blue">embiggened_integers = small_integers.each {|small_int| small_int * 2}</p>
+  <p style="font-family:Courier; color:blue;">return embiggened_integers</p>
+  <p>You would be disappointed if you expected this code to return <span style="font-family:Courier;">[2,4,6,8,10]</span>. It turns out that <span style="font-family:Courier;">each</span> always returns its receiver object, so when you pointed <span style="font-family:Courier;">embiggened_integers</span> at <span style="font-family:Courier;">small_integers.each...</span> Ruby returned the same thing as <span style="font-family:Courier;">embiggened_integers = small_integers</span>. That's because Enumerable#each lacks a way to save values as it iterates through a collection. If only there were an enumerable method that worked a lot like <span style="font-family:Courier;">each</span> while being clever enough to save the results of its work...</p>
+	<header><h3>Enter the map method</h3></header>
+	<p>The <span style="font-family:Courier;">map</span> method is Ruby's answer to your plea. It iterates and calls its block on a collection, just like <span style="font-family:Courier;">each</span>, but it saves the results and returns a new array. Brilliant! Let's try <a href="https://www.youtube.com/watch?v=5HQEOO5BvcU">embiggening</a> those integers again:</p>
+  <p style="font-family:Courier; color:blue;">small_integers = [1,2,3,4,5]</p>
+  <p style="font-family:Courier; color:blue;">embiggened_integers = small_integers.map {|small_int| small_int * 2}</p>
+  <p style="font-family:Courier; color:blue;">return embiggened_integers</p>
+  <p><b>Positively cromulent!</b></p>
+</article>
+</div>
+</div>
+</main>
+</body>
+</html>
