@@ -45,6 +45,11 @@ body {
   border-radius: 3px;
 }
 
+.code {
+	font-family: Courier;
+	font-size: 13px;
+}
+
 h3, p, pre {
 	padding-left: 1em;
 	padding-right: 1em;

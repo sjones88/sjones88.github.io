@@ -21,30 +21,37 @@
 		<p></p>
 	</article>
 	<article class="right_column">
-		<pre>var students = ["Joseph", "Susan", "William", "Elizabeth"]
+		<p class="code">var students = ["Joseph", "Susan", "William", "Elizabeth"]<br><br>
 
-var scores = [ [80, 70, 70, 100],
-               [85, 80, 90, 90],
-               [75, 70, 80, 75],
-               [100, 90, 95, 85] ]
+var scores = [ [80, 70, 70, 100],<br>
+               [85, 80, 90, 90],<br>
+               [75, 70, 80, 75],<br>
+               [100, 90, 95, 85] ]<br><br>
 
-var gradebook = {}
-students.forEach(function(student, index) {
-  gradebook[student] = {testScores: scores[index]};
-})
-gradebook['addScore'] = function(name, score) {
-  gradebook[name].testScores.push(score);
-}
-gradebook['getAverage'] = function(name) {
-  return average(gradebook[name].testScores);
-}
-var average = function(scores) {
-  return(scores.reduce(function(sum, score) {
-    return sum + score;
-  }))/scores.length;
-}
-		</pre>
+var gradebook = {}<br>
+students.forEach(function(student, index) {<br>
+  gradebook[student] = {testScores: scores[index]};<br>
+})<br><br>
+gradebook['addScore'] = function(name, score) {<br>
+  gradebook[name].testScores.push(score);<br>
+}<br><br>
+gradebook['getAverage'] = function(name) {<br>
+  return average(gradebook[name].testScores);<br>
+}<br><br>
+var average = function(scores) {<br>
+  return(scores.reduce(function(sum, score) {<br>
+    return sum + score;<br>
+  }))/scores.length;<br>
+}<br>
+		</p>
 		<div id="divider2"></div>
+
 	</article>
 </body>
 </html>
+
+
+
+
+
+
