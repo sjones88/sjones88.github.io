@@ -18,7 +18,7 @@
 		</ul>
 		<div id="divider1"></div>
 		<h3>Ruby Classes:</h3>
-		<p></p>
+		<p>The 'die class' exercise to the right gives an excellent illustration of some of the basic concepts of Ruby classes.</p>
 	</article>
 	<article class="right_column">
 		<p class="code">var students = ["Joseph", "Susan", "William", "Elizabeth"]<br><br>
@@ -45,7 +45,30 @@ var average = function(scores) {<br>
 }<br>
 		</p>
 		<div id="divider2"></div>
+		<h3>Die class exercise</h3>
+		<pre>class Die	
+  def initialize(labels)
+    @labels = labels
+    @sides = sides
+      unless labels.size > 0
+        raise ArgumentError.new('Array is empty. 
+        Pass a non-empty array.')
+      end
+      unless labels.is_a?(Array) == true
+        raise ArgumentError.new('Please pass an array.')
+      end
+    end
 
+  def sides
+    @sides = @labels.size
+  end
+
+  def roll
+    prng = Random.new
+    die_roll = prng.rand(0...@sides)
+    @labels[die_roll]
+  end
+end</pre>
 	</article>
 </body>
 </html>
