@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cheat-sheet.css">
+	<title>Cheat Sheet</title>
+</head>
+<body>
+	<header class="header_background"><h1>Phase One Cheat Sheet</h1></header>
+	<article class="left_column">
+		<h3>JavaScript: Nested Objects</h3>
+		<p>In the 'gradebook' example to the right:</p>
+		<ul>
+			<li>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">forEach()</a> method takes a function, which takes two arguments, 'student' and 'index'. For each element in the 'students' array, the gradebook object gets 'testScores' added as a key and the 'scores' array element at 'index' added as a value.</li>
+			<p></p>
+			<li>The "gradebook['addScore']" statement assigns a function to an object key in 'gradebook'. The function takes two parameters - 'name' and 'score' - and pushes 'score' to 'testScores' in the 'name' key.</li>
+			<p></p>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">The <b>reduce()</b> method</a></li>
+		</ul>
+		<div id="divider1"></div>
+		<h3>Ruby Classes:</h3>
+		<p></p>
+	</article>
+	<article class="right_column">
+		<pre>var students = ["Joseph", "Susan", "William", "Elizabeth"]
+
+var scores = [ [80, 70, 70, 100],
+               [85, 80, 90, 90],
+               [75, 70, 80, 75],
+               [100, 90, 95, 85] ]
+
+var gradebook = {}
+students.forEach(function(student, index) {
+  gradebook[student] = {testScores: scores[index]};
+})
+gradebook['addScore'] = function(name, score) {
+  gradebook[name].testScores.push(score);
+}
+gradebook['getAverage'] = function(name) {
+  return average(gradebook[name].testScores);
+}
+var average = function(scores) {
+  return(scores.reduce(function(sum, score) {
+    return sum + score;
+  }))/scores.length;
+}
+		</pre>
+		<div id="divider2"></div>
+	</article>
+</body>
+</html>
