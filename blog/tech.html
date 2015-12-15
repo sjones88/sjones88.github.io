@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <charset="UTF-8">
+  <title>Steve Jones</title>
+  <link rel="stylesheet" type="text/css" href="css-concepts.css">
+</head>
+<body style="font-family:Helvetica;">
+<main>
+  <div class="left"></div>
+  <div class="right">
+  <header class="top">
+  	<h1>Web Security</h1>
+    <h2>Oxymoron or merely wishful thinking?</h2>
+    <h4>December 14, 2015</h4>
+  </header>
+  </div><hr />
+<article>
+ 	<header><h3></h3></header>
+ 	<p>For this post, I watched <a href="http://news.microsoft.com/stories/people/james-mickens.html">James Mickens</a>'s informative and terrifying <a href="https://www.youtube.com/watch?v=_1C62Twf0vs">lecture</a> on web security. Mickens opens by disabusing his students of the notion that everything is ok in the world of web security, bluntly stating that "everything is terrible." He then proceeds to enumerate various practices that the web's major players have implemented in their effort to keep sensitive data out of the filthy hands of nefarious parties, while explaining the futility and (often startlingly obvious) defeasibility of those practices.</p>
+  <p>The web is feature-rich and complicated (no surprise there). More specifically, as the web has come of age, browsers have become incredibly complicated. Whereas browsers back in the day didn't have to deal with videos, animated objects, and transfers of really sensitive information all that much, modern browsers have to handle JavaScript, the DOM model, XML HTTP requests, web sockets, all kinds of multimedia support (like the new HTML5 video tag), geolocation, and more. It turns out that as features are added to web apps, the likelihood of making mistakes increases dramatically.</p>
+  <p>Think about a piece of software that lives on your computer; say, Microsoft Word. You know who's responsible for that software: Microsoft. Contrast that with a typical webpage where you might have ad software, analytics software, and code from multiple social networking sites, all on the same page. Suddenly it's not so clear who's responsible for the code running on your machine. To make matters worse, many of these apps need to share data with each other. How do browsers deal with the flow of data among clients, servers, and a multitude of content types? With the <em>same-origin policy</em>.</p>
+  <p>The same-origin policy came about, in part, because web specifications (that is, the official specifications of a .jpg file or of HTML, for example) are <em>incredibly</em> long, tedious, dull, and often inconsistent. Browser vendors are apparently unwilling or unable to parse that documentation, so they came up with the same-origin policy in an effort to corral the permissions nightmare that is the modern webpage.</p>
+  <p>I'll spare you a newb's chopped and screwed interpretation of the details of this problem, but you should definitely check out Mickens's lecture.</p>
+</article>
+</div>
+</div>
+</main>
+</body>
+</html>
