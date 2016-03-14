@@ -1,5 +1,5 @@
 li {
-	color: white;
+	color: black;
 }
 
 .posts a {
@@ -10,37 +10,7 @@ li {
 	color: green;
 }
 
-ul {
+ul.posts {
 	background-color: rgba(255,255,255,0.5);
 	font-family: Lucida, Monaco, monospace;
 }
-
-/*body {
-	background-image: url("https://farm2.staticflickr.com/1023/712054632_abdac07887_b.jpg");
-	background-repeat: no-repeat;
-	position: relative;
-	width: 500px;
-	background-position: center top;
-}
-
-h3 {
-	text-align: center;
-	margin-left: 75%;
-}
-
-li {
-	color: white;
-}
-
-ul {
-	margin-left: 65%;
-}
-
-header {
-	position: relative;
-	margin-left: 45%;
-}
-
-.divider {
-	margin-left: -6.5%;
-}*/
